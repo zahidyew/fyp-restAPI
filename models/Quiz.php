@@ -1,7 +1,7 @@
 <?php 
    class Quiz {
       private $conn;
-      private $table = 'quiz';
+      //private $table = 'quiz';
 
       public $quizId;
       public $quizArr = [];
@@ -11,7 +11,7 @@
       }
 
       public function listQuiz() {
-         $query = 'SELECT * FROM ' . $this->table;
+         $query = 'SELECT * FROM quiz';
 
          $stmt = $this->conn->prepare($query);
          $stmt-> execute();
@@ -30,6 +30,4 @@
             array_push($this->quizArr, $quizItem);
          }
       }
-
-      
    }
