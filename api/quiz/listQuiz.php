@@ -12,7 +12,9 @@
    $database = new Database();
    $db = $database->connect();
 
+   // Instantiate Quiz object, then call function
    $quiz = new Quiz($db);
    $quiz->listQuiz();
 
+   // send the quizArray as a response
    echo json_encode($quiz->quizArr);

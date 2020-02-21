@@ -12,8 +12,10 @@
    $database = new Database();
    $db = $database->connect();
 
+   // Instantiate Questions object
    $ques = new Questions($db);
 
+   // check if GET params is set
    if(isset($_GET['quizId'])) {
       $ques->quizId = $_GET['quizId'];
    }
