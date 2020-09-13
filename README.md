@@ -8,6 +8,7 @@ It is a simple RESTful API with only 3 endpoints. It is designed to get all the 
 Endpoint: ../api/quiz/listQuiz.php
 
 Example of Response: 
+```
 [
     {
         "quizId": 24,
@@ -27,12 +28,14 @@ Example of Response:
     },
     ...
 ]
+```
 
 ### 2. List all Questions for a Quiz (GET Request)
 Endpoint: ../api/question/listQues.php?quizId=24
 (it takes quizId as a param to list all the questions inside the quiz)
 
 Example of Response: 
+```
 [
     {
         "id": 31,
@@ -54,13 +57,14 @@ Example of Response:
     },
     ...  
 ]
+```
 
 ### 3. Saves records of Quiz attempts (POST Request)
 Endpoint: ../api/quizRecords/saveRecords.php
 (it takes username, mark, time, date & quizId as POST params)
 
 Example of Response: 
-201 
+`201`
 
 
 
