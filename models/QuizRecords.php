@@ -28,10 +28,11 @@
          $stmt->bindParam(':quizId', $this->quizId);
 
          if($stmt-> execute()) {
-            echo json_encode("Success");
+            // success
+            echo json_encode(201);
          }
          else {
-            echo json_encode("error");
+            echo json_encode(500);
          }
       }
    }
