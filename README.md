@@ -1,10 +1,10 @@
-## RESTful API for Aquatic Animals (Android App)
+## RESTful API for Aquatic Animals - Android App
 
 Allows the Android App to access(R/W) the MySQL database. 
 
 It is a simple RESTful API with only 3 endpoints. It is designed to get all the Quizzes in the DB and also all the Questions for a particular Quiz. Lastly, it save records of Quiz attempts (QuizRecords). 
 
-### 1. List all Quizzes (GET Request)
+### 1. Get all Quizzes (GET Request)
 Endpoint: ../api/quiz/listQuiz.php
 
 Example of Response: 
@@ -30,8 +30,8 @@ Example of Response:
 ]
 ```
 
-### 2. List all Questions for a Quiz (GET Request)
-Endpoint: ../api/question/listQues.php?quizId=24
+### 2. Get all Questions for a Quiz (GET Request)
+Endpoint: ../api/question/listQues.php?quizId=24 <br>
 (it takes quizId as a param to list all the questions inside the quiz)
 
 Example of Response: 
@@ -60,12 +60,12 @@ Example of Response:
 ```
 
 ### 3. Saves records of Quiz attempts (POST Request)
-Endpoint: ../api/quizRecords/saveRecords.php
+Endpoint: ../api/quizRecords/saveRecords.php <br>
 (it takes username, mark, time, date & quizId as POST params)
 
-Example of Response: 
+Example of Response: <br>
 `201`
 
 
-
-**make sure DB name is correct in Database.php file
+<br><br>
+**make sure DB name is correct in Database.php file [^1]
